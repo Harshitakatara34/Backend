@@ -6,7 +6,6 @@ const DoctorSchema = mongoose.Schema({
   Specialization: { type: String, required: true },
   Experience: { type: Number, required: true },
   Location: { type: String, required: true },
-  Date: { type: String, required: true },
   Slot: { type: Number, required: true },
   Fee: { type: Number, required: true },
 });
