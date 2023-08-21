@@ -14,6 +14,9 @@ app.use(express.json());
 app.use("/", route);
 app.use("/", appointments);
 
+app.use("/", (req, res) => {
+  res.status(404).json({ msg:"Home Page" });
+})
 const PORT = process.env.PORT;
 
 app.listen(PORT, async () => {
